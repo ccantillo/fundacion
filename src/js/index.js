@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     $("#correo").on('click', () => {
         console.log("nuevo test");
-        window.location.replace("correo.fundaedusa.org");
+        window.location = "correo.fundaedusa.org";
     })
 
 });
