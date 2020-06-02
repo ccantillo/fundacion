@@ -15,4 +15,8 @@ $(document).ready(function() {
 
     $('.materialboxed').materialbox();
 
+    $("#correo").on('click', () => {
+        window.location.replace("correo.fundaedusa.org");
+    })
+
 });
