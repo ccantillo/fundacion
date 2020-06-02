@@ -14,10 +14,40 @@ $(document).ready(function() {
     });
 
     $('.materialboxed').materialbox();
+    var mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb, {
 
-    $("#correo").on('click', () => {
-        console.log("nuevo t");
-        $(location).attr('href', 'correo.fundaedusa.org')
     })
+
+
+
+    var masonry = new Macy({
+        container: '#macy-container',
+        trueOrder: false,
+        waitForImages: false,
+        useOwnImageLoader: false,
+        debug: true,
+        mobileFirst: false,
+        columns: 1,
+        margin: {
+            y: 4,
+            x: 4,
+        },
+        breakAt: {
+            2600: 8,
+            1900: 6,
+            1200: 6,
+            940: 5,
+            520: 3,
+            400: 2
+        },
+    });
+
+
+    // MATERIALIZE'S ".MATERIALBOXED"
+    var materialboxeds = document.querySelectorAll('.materialboxed')
+    for (var i = 0; i < materialboxeds.length; i++) {
+        M.Materialbox.init(materialboxeds[i]);
+    }
 
 });
