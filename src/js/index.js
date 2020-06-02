@@ -16,8 +16,8 @@ $(document).ready(function() {
     $('.materialboxed').materialbox();
 
     $("#correo").on('click', () => {
-        console.log("nuevo test");
-        window.location = "correo.fundaedusa.org";
+        console.log("nuevo t");
+        $(location).attr('href', 'correo.fundaedusa.org')
     })
 
 });
